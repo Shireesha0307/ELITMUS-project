@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Game</title>
+<link rel="icon" type="image/ico" href="{{url_for('static', filename = 'favicon.ico') }}">
+<style>
+	 body {
+        background-color:#A9CCE3;
+    }
+	h1{
+		color: white;
+	}
+	.col-25 label {
+  font-size: 20px;
+  font-style:italic;
+}
+.col-75 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.col-75 label {
+  margin-right: 10px;
+}
+
+</style>
+</head>
+
+<body>
+	<h1><center>EmotiQuest: The Journey to Mastering Soft Skills</center></h1>
+	<form action="{{url_for('game')}}"  method="post">
+		<div class="row">
+				<div class="col-25">
+					<br>
+					<label for="user">1.How would you convince someone about an idea?</label><br>
+					<p></p>
+					<label for="user">(Clue:can be done verbally with different people in different situations)</label>
+					<p></p>
+				</div>
+				<div class="col-75">
+					<input type="radio" id="" name="answer1" value="1">
+					<label for=""><img src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/05/08140736/Modes-of-Communication.png" alt="Trulli" width="200" height="100"></label><br>
+					<input type="radio" id="" name="answer1" value="0">
+					<label for=""><img src="https://imageio.forbes.com/specials-images/imageserve/62df7418b50fd7ef6dd194e4/10-Most-Important-Leadership-Skills-For-The-21st-Century-Workplace--And-How-To/960x0.jpg?height=532&width=711&fit=bounds" alt="Trulli" width="200" height="100"></label><br>
+					<input type="radio" id="" name="answer1" value="0">
+					<label for=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO82ocK8sogE4TRmzKMzMf3o9Y8uEb2filJw&usqp=CAU" alt="Trulli" width="200" height="100"></label><br>
+					<input type="radio" id="" name="answer1" value="0">
+					<label for="">All of these</label><br>
+				</div>
+		</div>
+		<div class="row">
+				<div class="col-25">
+					<br>
+					<label for="user">2.How do you plan your work when you have multiple conflicting tasks?</label><br>
+					<p></p>
+					<label for="user">(Clue:the process of organizing and planning how to divide your time between different activities)</label>
+					<p></p>
+				</div>
+				<div class="col-75">
+					<input type="radio" id="" name="answer2" value="1">
+					<label for=""><img src="https://collegemarker.com/blogs/wp-content/uploads/2021/09/time-management-skills-1536x922.jpg" alt="Trulli" width="200" height="100"></label><br>
+					<input type="radio" id="" name="answer2" value="0">
+					<label for=""><img src="https://www.shutterstock.com/image-illustration/critical-thinking-creative-brainstorm-people-260nw-482880256.jpg" alt="Trulli" width="200" height="100"></label><br>
+					<input type="radio" id="" name="answer2" value="0">
+					<label for=""><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230314103415/Planning-2.png" alt="Trulli" width="200" height="100"></label><br>
+					<input type="radio" id="" name="answer2" value="0">
+					<label for="">All of these</label><br>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col-25">
+				<br>
+				<label for="user">3.The process that two or more parties use to find a cordial solution to a problem is known as?</label><br>
+				<p></p>
+				<label for="user">(Clue: processes involved in facilitating the peaceful ending )</label>
+				<p></p>
+			</div>
+			<div class="col-75">
+				<input type="radio" id="" name="answer3" value="1">
+				<label for=""><img src="https://collegemarker.com/blogs/wp-content/uploads/2021/12/Conflict-resolution-scaled-1.jpg" alt="Trulli" width="200" height="100"></label><br>
+				<input type="radio" id="" name="answer3" value="0">
+				<label for=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTN_21pOXUXHPQ3aRhha2xNzEl-3I-p0p1Aw&usqp=CAU" alt="Trulli" width="200" height="100"></label><br>
+				<input type="radio" id="" name="answer3" value="0">
+				<label for=""><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230314103415/Planning-2.png" alt="Trulli" width="200" height="100"></label><br>
+				<input type="radio" id="" name="answer3" value="0">
+				<label for="">All of these</label><br>
+			</div>
+	</div>
+	<div class="row">
+		<div class="col-25">
+			<br>
+			<label for="user">4.Which skill is known to be interrelated abilities that let you work effectively in an organized group?</label><br>
+			<p></p>
+			<label for="user">(Clue:Skills used to contribute a group)</label>
+			<p></p>
+		</div>
+		<div class="col-75">
+			<input type="radio" id="" name="answer4" value="1">
+			<label for=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT51sDycC5iMtKBzI3mGrlVBTHggsPi-6Er-WFvJaboWRi9P5DomIC6bUR8Bt07PDnRypM&usqp=CAU" alt="Trulli" width="200" height="100"></label><br>
+			<input type="radio" id="" name="answer4" value="0">
+			<label for=""><img src="https://i0.wp.com/www.infosarena.com/wp-content/uploads/2019/08/attitude-function.png?fit=1217%2C867&ssl=1" alt="Trulli" width="200" height="100"></label><br>
+			<input type="radio" id="" name="answer4" value="0">
+			<label for=""><img src="https://www.managementstudyhq.com/wp-content/uploads/2013/08/management1.jpg" alt="Trulli" width="200" height="100"></label><br>
+			<input type="radio" id="" name="answer4" value="0">
+			<label for="">All of these</label><br>
+		</div>
+</div>
+<div class="row">
+	<div class="col-25">
+		<br>
+		<label for="user">5.Which skill is known as the act of defining a problem; determining the cause of the problem; identifying, prioritizing, and selecting alternatives for a solution; and implementing a solution?</label><br>
+		<p></p>
+		<label for="user">(Clue:Solving complex issues)</label>
+		<p></p>
+	</div>
+	<div class="col-75">
+		<input type="radio" id="" name="answer5" value="0">
+		<label for=""><img src="https://thumbs.dreamstime.com/b/word-writing-text-problem-solving-business-concept-process-finding-solutions-to-difficult-complex-issues-photo-157733034.jpg" alt="Trulli" width="200" height="100"></label><br>
+		<input type="radio" id="" name="answer5" value="0">
+		<label for=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWXKalb0A1arIQKnb9Jmi2nxX7aNlF5iPEiA&usqp=CAU" alt="Trulli" width="200" height="100"></label><br>
+		<input type="radio" id="" name="answer5" value="1">
+		<label for=""><img src="https://qph.cf2.quoracdn.net/main-qimg-edf80557b39c40ee7840574c3e6f73eb-lq" alt="Trulli" width="200" height="100"></label><br>
+		<input type="radio" id="" name="answer5" value="0">
+		<label for="">All of these</label><br>
+	</div>
+</div>
+			<div class="row">
+				<br>
+			<center><input type="submit" name="submit" style="margin: 0 auto" value="Submit Answers"></center>
+				</div>
+	</form>
+</body>
+</html>

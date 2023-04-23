@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<link rel="icon" type="image/ico" href="{{url_for('static', filename = 'favicon.ico') }}">
+<style>
+	 body {
+        background-color:#A9CCE3;
+    }
+	<style>
+		body {
+			background-color: #A9CCE3;
+			margin: 0;
+			padding: 0;
+		}
+		.header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+			background-color: #2C3E50;
+			color: white;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		.header h1 {
+			margin: 0;
+			padding: 0;
+			font-size: 30px;
+			text-align: center;
+		}
+		.formContainer {
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			padding: 20px;
+			margin: 100px auto 0;
+			max-width: 500px;
+			text-align: left;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+		}
+		.row {
+			display: flex;
+			flex-direction: row;
+			margin-bottom: 10px;
+		}
+		.col-25 {
+			flex: 1;
+			margin-right: 10px;
+			text-align: right;
+		}
+		.col-75 {
+			flex: 3;
+		}
+		input[type="name"], input[type="email"], input[type="tel"],input[type="age"] {
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-bottom: 10px;
+			width: 100%;
+		}
+		input[type="submit"] {
+			background-color: #2C3E50;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			padding: 10px 20px;
+			font-size: 16px;
+			margin-top: 10px;
+		}
+		input[type="submit"]:hover {
+			background-color: #1E2833;
+		}
+		h1{
+			color:#FDFEFE;
+		}
+		body {
+	  background-image: url('https://res.cloudinary.com/people-matters/image/upload/q_auto,f_auto/v1567070991/1567070990.jpg');
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  height: 100%;
+	}
+	html,body{
+		height: 100%;
+	}
+		.formContainer {
+		float: left;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  width: 550px;
+  margin-top: 100px;
+ 
+}
+	</style>
+
+</head>
+
+<body>
+	
+	<h1><center>EmotiQuest: The Journey to Mastering Soft Skills</center></h1>
+	<center><button><a href="/login">Admin Login</a></button></center>
+	<div style="padding: 2%">
+	<div class="formContainer" style="padding: 2%">
+		<form action="{{url_for('index')}}" method="post">
+			<div class="row">
+				<div class="col-25">
+			<label for="user">Name</label>
+				</div>
+				<div class="col-75">
+			<input type="name" name="name" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+			<label for="email">Email</label>
+				</div>
+				<div class="col-75">
+			<input type="email" name="email" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class = "col-25">
+			<label for="pwd">Phone Number</label>
+				</div>
+				<div class = "col-75">
+			<input type="tel" name="phno" required>
+				</div>
+			</div>
+			<div class="row">
+				<div class = "col-25">
+			<label for="age">age</label>
+				</div>
+				<div class = "col-75">
+			<input type="age" name="age" required>
+				</div>
+			</div>
+			
+			<br>
+			<div class="row">
+			<input type="submit" name="submit" style="margin: 0 auto" value="Play Game">
+				</div>
+		</form>
+		
+		</div>
+	</div>
+</body>
+</html>
